@@ -1,0 +1,33 @@
+.header { 
+    grid-area: header;
+    background-image: url(../Media/partitura.jpg);
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;}
+
+    
+
+    .nav{
+        list-style: none;
+        padding: 0%;
+        display: flex;
+        a{
+            text-decoration: none;
+            border: 2px solid lightslategray;
+            border-radius: 50em;
+            color: rgb(5, 5, 5);
+            padding: 15px 30px;
+            margin: 0 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+            
+    }
+
+}
+ 

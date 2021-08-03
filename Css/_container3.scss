@@ -1,0 +1,47 @@
+#contenedor3 { 
+    background-color: rgb(250, 248, 248);
+    height: 100vp;
+    display: grid;
+    grid-template-columns: 
+        1fr 272fr 272fr 272fr 272fr 1fr
+    ;
+    grid-template-rows: 
+        100px 400px 400px 400px 1fr;
+    grid-template-areas: 
+     "header header header header header header"
+     ". . vid1 text1  . ."
+     ". . vid2 text2  . ."
+     ". . vid3 text3  . ."
+     "footer footer footer footer footer footer"
+    ;
+}
+.vid1{
+    grid-area: vid1;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.vid2{
+    grid-area: vid2;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.vid3{
+    grid-area: vid3;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.text1 {
+    grid-area: text1;
+    text-align: justify;
+    margin-top: 50px;
+}
+.text2 {
+    grid-area: text2;
+    text-align: justify;
+    margin-top: 20px;
+}
+.text3 {
+    grid-area: text3;
+    text-align: justify;
+    margin-top: 20px;
+}

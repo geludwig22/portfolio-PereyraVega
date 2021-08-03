@@ -1,0 +1,25 @@
+.form{
+    width: 350px;
+    margin-left: 20%;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    
+    h2{
+        font-size: 45px;
+        margin: 15px;
+    }
+    input{
+        margin: 10px 0;
+        padding: 7px;
+        border-radius: 6px;   
+    }
+    textarea{
+        width: 350px;
+    }
+    button{
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,71 @@
+#container { 
+    background-color: rgb(71, 67, 67);
+    height: 100vp;
+    display: grid;
+    grid-template-columns: 
+        1fr 272fr 272fr 272fr 272fr 1fr
+    ;
+    grid-template-rows: 
+        200px 300px 373px 215px 1fr;
+    grid-template-areas: 
+     "header header header header header header"
+     ". profile profile main main ."
+     ". . section section . ."
+     ". . logos logos . ."
+     "footer footer footer footer footer footer"
+    ;
+    
+}
+.main { 
+    grid-area: main;
+    height: 100;
+    padding: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    justify-content: center;
+    text-transform: uppercase;
+    span{
+        font-family: 'MonteCarlo', cursive;
+        text-transform:none;
+    }
+
+    p{
+        justify-content: center;
+        color: wheat;
+        &:hover{
+            transform: scale(1.5);
+            color: rgb(197, 168, 168); 
+        }
+    }
+    
+}
+
+
+.profile {
+    grid-area: profile;
+    img{
+        width: 40em;
+    }
+}
+
+
+section{
+    grid-area: section;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10em;
+}
+.logos {
+    grid-area: logos;
+    img{
+        width: 85px;
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
